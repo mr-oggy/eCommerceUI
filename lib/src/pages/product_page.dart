@@ -124,10 +124,12 @@ class ProductPage extends StatelessWidget {
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  Divider(
-                    thickness: 5,
-                    indent: 50,
-                    endIndent: 50, //ToDo: divider is not showing up
+                  Expanded(
+                    child: Divider(
+                      thickness: 2,
+                      indent: 0,
+                      endIndent: 30, //ToDo: divider is not showing up
+                    ),
                   ),
                 ],
               ),
