@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/src/home.dart';
 import 'package:ecommerce_ui/src/pages/all_products.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,14 @@ class Advice extends StatelessWidget {
                 Icons.arrow_back,
                 color: Colors.black,
               ),
-              onPressed: () {}),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Home(),
+                  ),
+                );
+              }),
           title: Text('Our Advice'),
           actions: <Widget>[
             IconButton(

@@ -1,4 +1,5 @@
 import 'package:ecommerce_ui/models/product_model.dart';
+import 'package:ecommerce_ui/widgets/my_drawer.dart';
 import 'package:ecommerce_ui/widgets/product_card/product_card.dart';
 import 'package:ecommerce_ui/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class Home extends StatelessWidget {
           ),
         ],
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -32,7 +33,8 @@ class Home extends StatelessWidget {
                   margin: EdgeInsets.zero,
                   elevation: 4.0,
                   child: Image.network(
-                    'https://www.imgworlds.com/wp-content/uploads/2015/11/ad-cn-sp-originals.jpg',
+                    //'https://www.imgworlds.com/wp-content/uploads/2015/11/ad-cn-sp-originals.jpg',
+                    'https://i.pinimg.com/originals/94/50/ed/9450edc9e2da48e07031c79b8f725010.jpg',
                   ),
                 ),
                 Positioned(

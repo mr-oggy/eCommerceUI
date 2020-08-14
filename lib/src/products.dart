@@ -1,4 +1,5 @@
 import 'package:ecommerce_ui/models/product_model.dart';
+import 'package:ecommerce_ui/widgets/my_drawer.dart';
 import 'package:ecommerce_ui/widgets/product_card/product_caer_with_new.dart';
 import 'package:ecommerce_ui/widgets/product_card/product_card.dart';
 import 'package:ecommerce_ui/widgets/tag_with_button.dart';
@@ -51,7 +52,7 @@ class Products extends StatelessWidget {
         ],
         elevation: 4,
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
       body: SingleChildScrollView(
         child: Column(
           children: [
