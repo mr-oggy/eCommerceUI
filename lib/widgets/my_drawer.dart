@@ -17,7 +17,13 @@ class MyDrawer extends StatelessWidget {
           ),
         ),
         ListTile(
-          title: Text('Home'),
+          title: Text(
+            'Home',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+          ),
           onTap: () {
             Navigator.push(
               context,
@@ -28,7 +34,13 @@ class MyDrawer extends StatelessWidget {
           },
         ),
         ListTile(
-          title: Text('Products'),
+          title: Text(
+            'Products',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+          ),
           onTap: () {
             Navigator.push(
               context,
@@ -39,7 +51,13 @@ class MyDrawer extends StatelessWidget {
           },
         ),
         ListTile(
-          title: Text("Advice"),
+          title: Text(
+            "Advice",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+          ),
           onTap: () {
             Navigator.push(
               context,
