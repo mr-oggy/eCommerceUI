@@ -1,4 +1,5 @@
 import 'package:ecommerce_ui/models/product_model.dart';
+import 'package:ecommerce_ui/widgets/SocialMedia/social_media.dart';
 import 'package:ecommerce_ui/widgets/colorAndSizeCard/color_size_selection_card.dart';
 import 'package:ecommerce_ui/widgets/discription_card/discription_card.dart';
 import 'package:ecommerce_ui/widgets/product_card/product_card_with_pageView.dart';
@@ -78,7 +79,7 @@ class ProductPage extends StatelessWidget {
               ProductCardPageView(
                 model: ProductModel(
                   price: '249',
-                  title: 'White Dress',
+                  title: 'Light Grey Dress',
                   listImageUrl: [
                     'https://www.wed2b.co.uk/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/L/I/LIBBY_WEDDING_DRESSES_FRONT_VIVA_BRIDE.jpg',
                     'https://www.wed2b.co.uk/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/t/a/tamsin_wedding_dress_front_viva_bride_1.jpg',
@@ -87,7 +88,7 @@ class ProductPage extends StatelessWidget {
                   ],
                 ),
               ),
-              Discription(data: 'This is discription'),
+              Discription(data: 'This is description'),
               ColorAndSize(),
               SizedBox(
                 height: 30,
@@ -111,7 +112,31 @@ class ProductPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 20,
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Text(
+                      'SHARE ON ',
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Divider(
+                    thickness: 5,
+                    indent: 50,
+                    endIndent: 50, //ToDo: divider is not showing up
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              SocialMedia(),
+              SizedBox(
+                height: 40,
               ),
             ],
           ),

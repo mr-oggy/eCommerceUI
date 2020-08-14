@@ -55,7 +55,9 @@ class ColorAndSize extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-                  ButtonColor(),
+                  ButtonColor(
+                    initialColor: Colors.grey[400],
+                  ),
                   SizedBox(
                     height: 20,
                   ),

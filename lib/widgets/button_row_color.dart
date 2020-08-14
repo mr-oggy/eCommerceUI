@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ButtonColor extends StatefulWidget {
+  final Color initialColor;
   final ValueChanged<String> onChange;
   const ButtonColor({
     Key key,
     this.onChange,
+    this.initialColor,
   }) : super(key: key);
 
   @override
@@ -12,7 +14,13 @@ class ButtonColor extends StatefulWidget {
 }
 
 class _ButtonColorState extends State<ButtonColor> {
-  Color value = Colors.white;
+  Color value;
+
+  @override
+  void initState() {
+    value = widget.initialColor;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
